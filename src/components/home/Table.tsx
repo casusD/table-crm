@@ -203,6 +203,7 @@ export function TableComponent() {
 				dataSource={dataSource}
 				columns={columns as ColumnTypes}
 				scroll={{ y: 'min-content' }}
+				pagination={{ pageSize: 3 }}
 				rowKey='id'
 			/>
 		</div>
