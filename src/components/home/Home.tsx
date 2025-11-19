@@ -247,6 +247,7 @@ export function Home() {
 						</Button>
 					</Space.Compact>
 					<TableComponent />
+					{/* <VerticalTable /> */}
 				</div>
 				<aside className='py-1 px-2 space-y-3'>
 					<div className='space-y-1.5'>

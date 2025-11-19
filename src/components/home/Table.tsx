@@ -84,7 +84,7 @@ const EditableCell: React.FC<React.PropsWithChildren<EditableCellProps>> = ({
 			</Form.Item>
 		) : (
 			<div
-				className='editable-cell-value-wrap '
+				className='editable-cell-value-wrap'
 				style={{ paddingInlineEnd: 18 }}
 				onClick={toggleEdit}
 			>
@@ -117,7 +117,6 @@ export function TableComponent() {
 	})[] = [
 		{
 			title: 'Название товара',
-			width: '30%',
 			dataIndex: 'name',
 		},
 		{
@@ -152,7 +151,7 @@ export function TableComponent() {
 						title='Подтвердите удаление'
 						onConfirm={() => delProduct(record.id)}
 					>
-						<Button>
+						<Button size='small'>
 							<DeleteOutlined />
 						</Button>
 					</Popconfirm>
@@ -198,12 +197,12 @@ export function TableComponent() {
 		<div className='w-full'>
 			<Table<ITableDataType>
 				components={components}
-				size='large'
-				rowClassName={() => 'h-[70px] editable-row'}
+				size='small'
+				rowClassName={() => 'text-[10px] h-[70px] editable-row'}
 				bordered
 				dataSource={dataSource}
 				columns={columns as ColumnTypes}
-				scroll={{ x: 'max-content' }}
+				scroll={{ y: 'min-content' }}
 				rowKey='id'
 			/>
 		</div>

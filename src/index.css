@@ -39,3 +39,8 @@ button {
 .editable-cell {
 	position: relative;
 }
+
+:where(.css-dev-only-do-not-override-1rocbtd).ant-table-wrapper
+	.ant-table.ant-table-small {
+	font-size: 8px;
+}
