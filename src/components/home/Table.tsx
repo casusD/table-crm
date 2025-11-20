@@ -117,6 +117,7 @@ export function TableComponent() {
 	})[] = [
 		{
 			title: 'Название товара',
+			width: '30%',
 			dataIndex: 'name',
 		},
 		{
@@ -137,6 +138,7 @@ export function TableComponent() {
 		{
 			title: 'Единица',
 			dataIndex: 'unit',
+			responsive: ['sm'],
 		},
 		{
 			title: 'Итого',

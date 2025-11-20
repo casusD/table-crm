@@ -41,6 +41,8 @@ button {
 }
 
 /* :where(.css-dev-only-do-not-override-1rocbtd) */
-.ant-table-wrapper .ant-table.ant-table-small {
-	font-size: 8px;
+@media (max-width: 768px) {
+	.ant-table-wrapper .ant-table.ant-table-small {
+		font-size: 8px;
+	}
 }
