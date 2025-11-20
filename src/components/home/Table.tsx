@@ -117,7 +117,7 @@ export function TableComponent() {
 	})[] = [
 		{
 			title: 'Название товара',
-			width: '30%',
+			width: '25%',
 			dataIndex: 'name',
 		},
 		{
